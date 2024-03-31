@@ -2,9 +2,9 @@ server:
   port: 9000
 
 configmap:
-  db-name: "${DB_NAME}"
-  db-host: "${DB_HOST}"
+  db-name: ${DB_NAME:DB name from application.yaml}
+  db-host: ${DB_HOST:DB host from application.yaml}
 
 secret:
-  db-user: "${DB_USER}"
-  db-password: "${DB_PASSWORD}"
+  db-user: ${DB_USER:DB user from application.yaml}
+  db-password: ${DB_PASSWORD:DB password from application.yaml}
