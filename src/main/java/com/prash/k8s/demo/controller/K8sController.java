@@ -15,10 +15,10 @@ public class K8sController {
     @Value("${configmap.db-host}")
     private String dbHost;
 
-    @Value("${configmap.db-user}")
+    @Value("${secret.db-user}")
     private String dbUser;
 
-    @Value("${configmap.db-password}")
+    @Value("${secret.db-password}")
     private String dbPassword;
 
 
