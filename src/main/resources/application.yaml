@@ -1,0 +1,10 @@
+server:
+  port: 9000
+
+configmap:
+  db-name: "${DB_NAME}"
+  db-host: "${DB_HOST}"
+
+secret:
+  db-user: "${DB_USER}"
+  db-password: "${DB_PASSWORD}"
